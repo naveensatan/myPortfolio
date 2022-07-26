@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 70, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    transition: all 200ms ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: -1rem;
+}
+
+nav ul li {
+    display: block;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+nav ul li span {
+    opacity: 0;
+    left: 2rem;
+    transition: all 400ms ease-in-out;
+}
+
+nav:hover {
+    width: 11vw;
+}
+
+nav:hover ul li span {
+    opacity: 1;
+    margin-left: 2rem;
+}
+
+nav ul li:hover {
+    width: 5.6rem;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+nav ul li:hover ul li span {
+    opacity: 1;
+    margin-left: 2rem;
+}
+
+.fa {
+    color:white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

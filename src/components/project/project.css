@@ -1,0 +1,39 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(9, 30, 255, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 3rem;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h3 {
+    font-size: 1.6rem;
+}
+
+.project-content span {
+    color: blue;
+    font-weight: bold;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a {
+    font-weight: bold;
+    color: blue;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.project-ss {
+    height: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 8px -2px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}

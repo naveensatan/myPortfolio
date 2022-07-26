@@ -1,0 +1,70 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: rgba(9, 30, 255, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 3rem;
+}
+
+.skills-header {
+    font-size: 3rem;
+}
+
+.fa-brands {
+    font-size: 3rem;
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
+.fa-css3 {
+    color: blue;
+}
+
+.fa-js {
+    color: #f7df1e;
+}
+
+.fa-php {
+    color: #4f5b93;
+}
+
+.fa-react {
+    color: #00d8ff;
+}
+
+.fa-git {
+    color: #c9510c;
+}
+
+.fa-wordpress {
+    color: #21759b;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgb(9 30 255 / 25%) 0px 4px 8px -2px, rgb(9 30 66 / 8%) 0px 0px 0px 1px;
+    padding: 1rem;
+    width: 7rem;
+    height: 6rem;
+    transition: all 200ms ease-in-out;
+}
+
+.skill-item p {
+    font-weight: bold;
+}
+
+.skill-item:hover {
+    transform: scale(1.1);
+}
