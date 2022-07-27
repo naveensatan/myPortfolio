@@ -23,10 +23,18 @@ function Summary() {
             Resumé
           </a>
           <div className="bio-social">
-            <a href="https://github.com/naveensatan">
+            <a
+              href="https://github.com/naveensatan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-github bio-social-i btn"></i>
             </a>
-            <a href="https://www.linkedin.com/in/naveensatanarachchi/">
+            <a
+              href="https://www.linkedin.com/in/naveensatanarachchi/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa-brands fa-linkedin bio-social-i btn"></i>
             </a>
           </div>
