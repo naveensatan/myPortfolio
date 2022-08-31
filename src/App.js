@@ -8,52 +8,50 @@ import Project from "./components/project/project";
 
 import projectSS from "./data/projectss.png";
 
-const projects = [
-	{
-		title: `Queen of My Own Universe`,
-		img: projectSS,
-		tech: [`WordPress`, `WooCommerce`],
-		content: [
-			`Designed and developed a customized website using WordPress to achieve optimized goals.`,
-			`Participated in pre-project analysis and technical assessments to develop a user-friendly interface and correct functionality.`,
-			`Delivered end-user training on content management systems allowing the client to make easy updates and maintenance to the website without developer assistance`,
-		],
-		link: `http://queenofmyownuniverse.com/`,
-	},
-	{
-		title: `Respect the Ability`,
-		tech: [`ReactJS`, `CSS`],
-		content: [
-			`Designed front-end using React JS to meet good user experience`,
-			`Optimised content to meet W3 Accessibility Guidelines`,
-		],
-		repo: `https://github.com/naveensatan/portfolio2`,
-	},
-];
+const queen = {
+  title: `Queen of My Own Universe`,
+  img: projectSS,
+  tech: [`WordPress`, `WooCommerce`],
+  content: [
+    `Designed and developed a customized website using WordPress to achieve optimized goals.`,
+    `Participated in pre-project analysis and technical assessments to develop a user-friendly interface and correct functionality.`,
+    `Delivered end-user training on content management systems allowing the client to make easy updates and maintenance to the website without developer assistance`,
+  ],
+  link: `http://queenofmyownuniverse.com/`,
+};
+
+const respectTheAbility = {
+  title: `Respect the Ability`,
+  tech: [`ReactJS`, `CSS`],
+  content: [
+    `Designed front-end using React JS to meet good user experience`,
+    `Optimised content to meet W3 Accessibility Guidelines`,
+  ],
+  repo: `https://github.com/naveensatan/portfolio2`,
+};
 
 function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<Nav />
-			</header>
-			<div className="body">
-				<Summary />
-				<SectionHeading id="about" describe="a bit" heading="about me" />
-				<About />
-				<SectionHeading id="skills" describe="some of" heading="my skills" />
-				<Skills />
-				<SectionHeading
-					id="projects"
-					describe="glance into"
-					heading="my projects"
-				/>
-				{projects.map((project) => (
-					<Project {...project} />
-				))}
-			</div>
-		</div>
-	);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <Nav />
+      </header>
+      <div className="body">
+        <Summary />
+        <SectionHeading id="about" describe="a bit" heading="about me" />
+        <About />
+        <SectionHeading id="skills" describe="some of" heading="my skills" />
+        <Skills />
+        <SectionHeading
+          id="projects"
+          describe="glance into"
+          heading="my projects"
+        />
+        <Project {...queen} />
+        <Project {...respectTheAbility} />
+      </div>
+    </div>
+  );
 }
 
 export default App;
